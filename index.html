@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <button id="theme-toggle">🌙</button> <!-- Modo Claro/Escuro -->
+
+  <div class="login-page">
+    <form class="login-form" id="loginForm" autocomplete="off" novalidate>
+      <h2>Bem-vindo de volta!</h2>
+
+      <div class="input-group">
+        <input type="text" id="username" name="username" required />
+        <label for="username">Usuário</label>
+        <span class="underline"></span>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" name="password" required />
+        <label for="password">Senha</label>
+        <span class="underline"></span>
+        <span class="eye-icon" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <button type="submit">Entrar</button>
+
+      <p class="error-message" aria-live="polite"></p>
+
+      <p class="signup-text">
+        Não tem uma conta? <a href="#">Crie agora</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

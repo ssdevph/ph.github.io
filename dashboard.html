@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>adon</h2>
+    </div>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Log de Tempo</a></li>
+      <li><a href="#">Gerenciamento de Recursos</a></li>
+      <li><a href="#">Usuários</a></li>
+      <li><a href="#">Configurações</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="top-bar">
+      <input type="search" placeholder="Pesquisar...">
+      <div class="user-profile">
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="User">
+        <span>Olá, Usuário</span>
+        <button onclick="logout()">Logout</button> <!-- Botão de Logout -->
+      </div>
+    </div>
+    
+    <div class="dashboard-overview">
+      <div class="card">
+        <h3>Total Valor</h3>
+        <p>$53,900</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 12%;"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Projetos</h3>
+        <p>95/100</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 10%;"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tempo Gasto</h3>
+        <p>1022/1300 Hrs</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 8%;"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Usuários</h3>
+        <p>101/120</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 2%;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-summary">
+      <h3>Resumo dos Projetos</h3>
+      <table>
+        <tr>
+          <th>Nome do Projeto</th>
+          <th>Data de Entrega</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Nelsa Web Development</td>
+          <td>25.01.24</td>
+          <td class="completed">Completo</td>
+        </tr>
+        <tr>
+          <td>Datascale AI App</td>
+          <td>25.01.24</td>
+          <td class="delayed">Atrasado</td>
+        </tr>
+        <tr>
+          <td>Media Channel Branding</td>
+          <td>25.01.24</td>
+          <td class="at-risk">Em risco</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
